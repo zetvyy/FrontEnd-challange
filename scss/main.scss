@@ -1,0 +1,126 @@
+// Headings, Call-to-actions, Header Navigation
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+// Body
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+$primaryColor: (
+  "darkBlue1": hsl(217, 28%, 15%),
+  "darkBlue2": hsl(218, 28%, 13%),
+  "darkBlue3": hsl(216, 53%, 9%),
+  "darkBlue4": hsl(219, 30%, 18%)
+);
+
+$accentColor: (
+  "cyan": hsl(176, 68%, 64%),
+  "blue": hsl(198, 60%, 50%),
+  "redLight": hsl(0, 100%, 63%)
+);
+
+body {
+  background-color: map-get($primaryColor, "darkBlue1");
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  min-height: 4000px;
+}
+
+.navbar {
+  margin-top: 2em;
+  .container-fluid {
+    .navbar-brand {
+      img {
+        width: 7em;
+      }
+    }
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          padding: 0 2em;
+        }
+      }
+    }
+  }
+}
+
+.img-intro {
+  img {
+    width: 500px;
+    margin-top: 2em;
+  }
+}
+
+.text-intro {
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 2em;
+}
+
+.button1 {
+  color: white;
+  text-decoration: none;
+  padding: 10px 70px;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  background: rgb(101, 226, 217);
+  background: linear-gradient(90deg, rgba(101, 226, 217, 1) 0%, rgba(51, 158, 204, 1) 100%);
+  margin-top: 1em;
+  &:hover {
+    background: map-get($map: $accentColor, $key: "redLight");
+    border: 1px solid transparent;
+  }
+}
+
+.img-curve {
+  margin-top: -200px;
+  position: relative;
+  z-index: -1;
+}
+
+.content {
+  background-color: map-get($primaryColor, "darkBlue2");
+  header {
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-top: 20px;
+  }
+  p {
+    margin-top: 10px;
+  }
+}
+
+.content2 {
+  padding-top: 5em;
+  background-color: map-get($primaryColor, "darkBlue2");
+  img {
+    width: 500px;
+  }
+  h2 {
+    font-weight: 700;
+    margin-top: 2em;
+    margin-bottom: 0.7em;
+  }
+  a {
+    color: map-get($accentColor, "cyan");
+    &:hover {
+      color: white;
+    }
+    span {
+      img {
+        width: 1.2em;
+      }
+    }
+  }
+}
+
+.testimonies {
+  padding-top: 15em;
+  background-color: map-get($primaryColor, "darkBlue2");
+  .card {
+    background-color: map-get($primaryColor, "darkBlue4");
+    font-size: 12px;
+    line-height: 1;
+  }
+}

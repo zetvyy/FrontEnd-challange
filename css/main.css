@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+body {
+  background-color: #1c2431;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  min-height: 4000px;
+}
+
+.navbar {
+  margin-top: 2em;
+}
+
+.navbar .container-fluid .navbar-brand img {
+  width: 7em;
+}
+
+.navbar .container-fluid .navbar-nav .nav-item .nav-link {
+  padding: 0 2em;
+}
+
+.img-intro img {
+  width: 500px;
+  margin-top: 2em;
+}
+
+.text-intro {
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 2em;
+}
+
+.button1 {
+  color: white;
+  text-decoration: none;
+  padding: 10px 70px;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  background: #65e2d9;
+  background: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
+  background: linear-gradient(90deg, #65e2d9 0%, #339ecc 100%);
+  margin-top: 1em;
+}
+
+.button1:hover {
+  background: #ff4242;
+  border: 1px solid transparent;
+}
+
+.img-curve {
+  margin-top: -200px;
+  position: relative;
+  z-index: -1;
+}
+
+.content {
+  background-color: #181f2a;
+}
+
+.content header {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+.content p {
+  margin-top: 10px;
+}
+
+.content2 {
+  padding-top: 5em;
+  background-color: #181f2a;
+}
+
+.content2 img {
+  width: 500px;
+}
+
+.content2 h2 {
+  font-weight: 700;
+  margin-top: 2em;
+  margin-bottom: 0.7em;
+}
+
+.content2 a {
+  color: #65e2d9;
+}
+
+.content2 a:hover {
+  color: white;
+}
+
+.content2 a span img {
+  width: 1.2em;
+}
+
+.testimonies {
+  padding-top: 15em;
+  background-color: #181f2a;
+}
+
+.testimonies .card {
+  background-color: #202a3c;
+  font-size: 12px;
+}
+/*# sourceMappingURL=main.css.map */
