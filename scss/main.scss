@@ -33,7 +33,6 @@ body {
   padding: 0;
   box-sizing: border-box;
   color: white;
-  min-height: 5000px;
 }
 
 .navbar {
@@ -62,6 +61,7 @@ body {
 }
 
 .text-intro {
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   line-height: 1.5;
   margin-top: 2em;
@@ -131,10 +131,15 @@ body {
 .testimonies {
   padding-top: 15em;
   background-color: map-get($primaryColor, "darkBlue2");
+  .png {
+    margin-left: 8em;
+  }
   .card {
     background-color: map-get($primaryColor, "darkBlue4");
     font-size: 12px;
     line-height: 1;
+    position: relative;
+    z-index: 1;
     .card-body {
       .ph {
         line-height: 1.5;
@@ -165,13 +170,15 @@ body {
 
 .sign-up {
   background-color: map-get($primaryColor, "darkBlue2");
-  padding-top: 8em;
+  padding-top: 20em;
   font-size: 14px;
 
   .card {
     background-color: map-get($primaryColor, "darkBlue1");
     padding: 30px;
     width: 750px;
+    position: absolute;
+    margin-top: -125px;
     .card-title {
       font-weight: 700;
     }
@@ -183,6 +190,41 @@ body {
       width: 27em;
       border-radius: 25px;
       padding: 10px 35px;
+    }
+  }
+}
+
+footer {
+  background-color: map-get($primaryColor, "darkBlue3");
+  padding: 200px 0 100px 0;
+  position: relative;
+  z-index: -1;
+
+  .colsvg {
+    margin-left: 1em;
+  }
+  span {
+    img {
+      margin-right: 1em;
+    }
+  }
+  p {
+    a {
+      color: white;
+      text-decoration: none;
+      &:hover {
+        color: cyan;
+      }
+    }
+  }
+  .sosmed {
+    a {
+      svg {
+        width: 1.3em;
+        height: 1.3em;
+        border: 1px solid white;
+        border-radius: 100%;
+      }
     }
   }
 }
