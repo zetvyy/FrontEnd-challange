@@ -17,6 +17,15 @@ $accentColor: (
   "redLight": hsl(0, 100%, 63%)
 );
 
+@mixin buttonStarter {
+  color: white;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  background: rgb(101, 226, 217);
+  background: linear-gradient(90deg, rgba(101, 226, 217, 1) 0%, rgba(51, 158, 204, 1) 100%);
+}
+
 body {
   background-color: map-get($primaryColor, "darkBlue1");
   font-family: "Open Sans", sans-serif;
@@ -24,7 +33,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   color: white;
-  min-height: 4000px;
+  min-height: 5000px;
 }
 
 .navbar {
@@ -59,14 +68,18 @@ body {
 }
 
 .button1 {
-  color: white;
-  text-decoration: none;
+  @include buttonStarter();
   padding: 10px 70px;
-  border: 1px solid transparent;
-  border-radius: 25px;
-  background: rgb(101, 226, 217);
-  background: linear-gradient(90deg, rgba(101, 226, 217, 1) 0%, rgba(51, 158, 204, 1) 100%);
   margin-top: 1em;
+  &:hover {
+    background: map-get($map: $accentColor, $key: "redLight");
+    border: 1px solid transparent;
+  }
+}
+
+.button2 {
+  @include buttonStarter();
+  padding: 12px 35px;
   &:hover {
     background: map-get($map: $accentColor, $key: "redLight");
     border: 1px solid transparent;
@@ -122,5 +135,54 @@ body {
     background-color: map-get($primaryColor, "darkBlue4");
     font-size: 12px;
     line-height: 1;
+    .card-body {
+      .ph {
+        line-height: 1.5;
+      }
+      span {
+        img {
+          width: 2.3em;
+          border-radius: 100%;
+          margin-right: 1em;
+          margin-top: 1.5em;
+        }
+      }
+      .p2 {
+        margin-left: 3.5em;
+        margin-top: -2.2em;
+      }
+      .p3 {
+        margin-left: 3.5em;
+        margin-top: -1em;
+      }
+      .p4 {
+        margin-left: 3.5em;
+        margin-top: -1em;
+      }
+    }
+  }
+}
+
+.sign-up {
+  background-color: map-get($primaryColor, "darkBlue2");
+  padding-top: 8em;
+  font-size: 14px;
+
+  .card {
+    background-color: map-get($primaryColor, "darkBlue1");
+    padding: 30px;
+    width: 750px;
+    .card-title {
+      font-weight: 700;
+    }
+    .card-text {
+      margin-top: 2em;
+      margin-bottom: 1em;
+    }
+    .email {
+      width: 27em;
+      border-radius: 25px;
+      padding: 10px 35px;
+    }
   }
 }
