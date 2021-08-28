@@ -189,8 +189,6 @@ body {
 footer {
   background-color: #0b1523;
   padding: 200px 0 100px 0;
-  position: relative;
-  z-index: -1;
 }
 
 footer .colsvg {
@@ -207,13 +205,16 @@ footer p a {
 }
 
 footer p a:hover {
-  color: cyan;
+  color: white;
+  text-decoration: underline;
+}
+
+footer .sosmed a {
+  color: white;
 }
 
 footer .sosmed a svg {
-  width: 1.3em;
-  height: 1.3em;
-  border: 1px solid white;
-  border-radius: 100%;
+  width: 20px;
+  height: 20px;
 }
 /*# sourceMappingURL=main.css.map */
