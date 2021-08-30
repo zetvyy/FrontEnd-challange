@@ -27,6 +27,13 @@ body {
   margin-top: 2em;
 }
 
+@media screen and (max-width: 972px) {
+  .img-intro img {
+    width: 300px;
+    margin-left: 2.5em;
+  }
+}
+
 .text-intro {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -73,8 +80,21 @@ body {
   z-index: -1;
 }
 
+@media screen and (max-width: 972px) {
+  .img-curve {
+    display: none;
+  }
+}
+
 .content {
   background-color: #181f2a;
+}
+
+@media screen and (max-width: 972px) {
+  .content {
+    margin-top: 2em;
+    padding-top: 2em;
+  }
 }
 
 .content header {
@@ -94,6 +114,13 @@ body {
 
 .content2 img {
   width: 500px;
+}
+
+@media screen and (max-width: 972px) {
+  .content2 img {
+    width: 300px;
+    margin-left: 2.5em;
+  }
 }
 
 .content2 h2 {
@@ -121,6 +148,12 @@ body {
 
 .testimonies .png {
   margin-left: 8em;
+}
+
+@media screen and (max-width: 972px) {
+  .testimonies .png {
+    margin-left: -0.8em;
+  }
 }
 
 .testimonies .card {
@@ -171,19 +204,39 @@ body {
   margin-top: -125px;
 }
 
-.sign-up .card .card-title {
+@media screen and (max-width: 972px) {
+  .sign-up .card {
+    width: 330px;
+    margin-top: -250px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.sign-up .card-title {
   font-weight: 700;
 }
 
-.sign-up .card .card-text {
+.sign-up .card-text {
   margin-top: 2em;
   margin-bottom: 1em;
 }
 
-.sign-up .card .email {
+.sign-up .email {
   width: 27em;
   border-radius: 25px;
   padding: 10px 35px;
+}
+
+@media screen and (max-width: 972px) {
+  .sign-up .email {
+    width: 15em;
+    margin-bottom: 1em;
+  }
 }
 
 footer {

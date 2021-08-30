@@ -57,6 +57,10 @@ body {
   img {
     width: 500px;
     margin-top: 2em;
+    @media screen and (max-width: 972px) {
+      width: 300px;
+      margin-left: 2.5em;
+    }
   }
 }
 
@@ -90,10 +94,17 @@ body {
   margin-top: -200px;
   position: relative;
   z-index: -1;
+  @media screen and (max-width: 972px) {
+    display: none;
+  }
 }
 
 .content {
   background-color: map-get($primaryColor, "darkBlue2");
+  @media screen and (max-width: 972px) {
+    margin-top: 2em;
+    padding-top: 2em;
+  }
   header {
     font-weight: 700;
     font-size: 1.2em;
@@ -109,6 +120,10 @@ body {
   background-color: map-get($primaryColor, "darkBlue2");
   img {
     width: 500px;
+    @media screen and (max-width: 972px) {
+      width: 300px;
+      margin-left: 2.5em;
+    }
   }
   h2 {
     font-weight: 700;
@@ -133,6 +148,9 @@ body {
   background-color: map-get($primaryColor, "darkBlue2");
   .png {
     margin-left: 8em;
+    @media screen and (max-width: 972px) {
+      margin-left: -0.8em;
+    }
   }
   .card {
     background-color: map-get($primaryColor, "darkBlue4");
@@ -179,17 +197,27 @@ body {
     width: 750px;
     position: absolute;
     margin-top: -125px;
-    .card-title {
-      font-weight: 700;
+    @media screen and (max-width: 972px) {
+      width: 330px;
+      margin-top: -250px;
+      align-items: center;
+      justify-content: center;
     }
-    .card-text {
-      margin-top: 2em;
+  }
+  .card-title {
+    font-weight: 700;
+  }
+  .card-text {
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+  .email {
+    width: 27em;
+    border-radius: 25px;
+    padding: 10px 35px;
+    @media screen and (max-width: 972px) {
+      width: 15em;
       margin-bottom: 1em;
-    }
-    .email {
-      width: 27em;
-      border-radius: 25px;
-      padding: 10px 35px;
     }
   }
 }
